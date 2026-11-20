@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property | ParSUan NestFinder</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a href="list.html" class="brand">
+        <span class="brand-icon">N</span>
+        <span>ParSUan <strong>NestFinder</strong></span>
+    </a>
+
+    <nav class="navigation">
+        <a href="list.html">Home</a>
+        <a href="list.html" class="active">Properties</a>
+        <a href="#">Inquiries</a>
+        <a href="#">Favorites</a>
+        <a href="#">Notifications</a>
+    </nav>
+
+    <div class="profile">
+        <span class="profile-avatar">O</span>
+        <span>Owner</span>
+    </div>
+</header>
+
+<main class="page-container form-page">
+
+    <div class="breadcrumb">
+        <a href="list.html">Properties</a>
+        <span>/</span>
+        <span>Add Property</span>
+    </div>
+
+    <section class="page-heading">
+        <div>
+            <p class="eyebrow">PROPERTY MANAGEMENT</p>
+            <h1>Add New Property</h1>
+            <p class="page-description">
+                Enter your property information to create a new listing.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-card form-card">
+
+        <div class="form-intro">
+            <div class="form-icon">
+                <span>+</span>
+            </div>
+            <div>
+                <h2>Property Information</h2>
+                <p>Fill in the details of your boarding house, dormitory, or apartment.</p>
+            </div>
+        </div>
+
+        <p class="required-note">
+            Fields marked with <span>*</span> are required.
+        </p>
+
+        <form action="#" method="post" class="form">
+
+            <div class="form-section-title">
+                <h3>Basic Information</h3>
+                <p>Provide the property owner and campus details.</p>
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="owner_id">Owner <span>*</span></label>
+                    <select id="owner_id" name="owner_id" required>
+                        <option value="">Choose owner</option>
+                        <option value="1">Owner 1 - Rosa Dela Cruz</option>
+                        <option value="2">Owner 2 - Eduardo Mercado</option>
+                        <option value="3">Owner 3 - Lourdes Bautista</option>
+                    </select>
+                    <small>Select the registered owner.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="campus_id">Campus <span>*</span></label>
+                    <select id="campus_id" name="campus_id" required>
+                        <option value="">Choose campus</option>
+                        <option value="1">
+                            Partido State University - Goa Campus
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="name">Property Name <span>*</span></label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        maxlength="150"
+                        placeholder="e.g. Sunrise Boarding House"
+                        required
+                    >
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="address">Complete Address <span>*</span></label>
+                    <input
+                        type="text"
+                        id="address"
+                        name="address"
+                        maxlength="255"
+                        placeholder="Enter property address"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <div class="form-section-title">
+                <h3>Location Details</h3>
+                <p>Provide the geographical coordinates and directions.</p>
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="latitude">Latitude <span>*</span></label>
+                    <input
+                        type="number"
+                        id="latitude"
+                        name="latitude"
+                        step="any"
+                        min="-90"
+                        max="90"
+                        placeholder="e.g. 13.701500"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="longitude">Longitude <span>*</span></label>
+                    <input
+                        type="number"
+                        id="longitude"
+                        name="longitude"
+                        step="any"
+                        min="-180"
+                        max="180"
+                        placeholder="e.g. 123.499000"
+                        required
+                    >
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="landmark_directions">
+                        Landmark and Directions
+                    </label>
+                    <textarea
+                        id="landmark_directions"
+                        name="landmark_directions"
+                        rows="3"
+                        placeholder="Describe nearby landmarks and how to find the property..."
+                    ></textarea>
+                </div>
+
+            </div>
+
+            <div class="form-section-title">
+                <h3>Property Rules and Policies</h3>
+                <p>Specify the house rules and policies for boarders.</p>
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="gender_policy">Gender Policy <span>*</span></label>
+                    <select
+                        id="gender_policy"
+                        name="gender_policy"
+                        required
+                    >
+                        <option value="">Choose policy</option>
+                        <option value="Male Only">Male Only</option>
+                        <option value="Female Only">Female Only</option>
+                        <option value="Mixed">Mixed</option>
+                    </select>
+                    <small>Choose the property's accepted boarder policy.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="curfew">Curfew</label>
+                    <input
+                        type="time"
+                        id="curfew"
+                        name="curfew"
+                    >
+                    <small>Leave blank if there is no curfew.</small>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="rules">House Rules</label>
+                    <textarea
+                        id="rules"
+                        name="rules"
+                        rows="3"
+                        placeholder="Enter the rules and regulations..."
+                    ></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="description">Property Description</label>
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="4"
+                        placeholder="Describe the property and its features..."
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Listing Status <span>*</span></label>
+                    <select id="status" name="status" required>
+                        <option value="Pending" selected>Pending</option>
+                        <option value="Approved">Approved</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+                    <small>New property listings should normally be Pending.</small>
+                </div>
+
+            </div>
+
+            <div class="form-notice">
+                <strong>Before submitting:</strong>
+                Please check that all required information is correct.
+                Property listings may require administrator verification.
+            </div>
+
+            <div class="form-actions">
+                <a href="list.html" class="btn btn-secondary">Cancel</a>
+                <button type="submit" class="btn btn-primary">
+                    Save Property
+                </button>
+            </div>
+
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 ParSUan NestFinder</p>
+        <p>Partido State University – Goa Campus</p>
+    </footer>
+
+</main>
+
+</body>
+</html>

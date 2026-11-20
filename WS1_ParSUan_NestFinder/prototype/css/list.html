@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Properties | ParSUan NestFinder</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a href="list.html" class="brand">
+        <span class="brand-icon">N</span>
+        <span>ParSUan <strong>NestFinder</strong></span>
+    </a>
+
+    <nav class="navigation">
+        <a href="list.html">Home</a>
+        <a href="list.html" class="active">Properties</a>
+        <a href="#">Inquiries</a>
+        <a href="#">Favorites</a>
+        <a href="#">Notifications</a>
+    </nav>
+
+    <div class="profile">
+        <span class="profile-avatar">O</span>
+        <span>Owner</span>
+    </div>
+</header>
+
+<main class="page-container">
+
+    <section class="page-heading">
+        <div>
+            <p class="eyebrow">OWNER DASHBOARD</p>
+            <h1>Manage Properties</h1>
+            <p class="page-description">
+                Manage and monitor your boarding houses, dormitories,
+                and apartment listings.
+            </p>
+        </div>
+
+        <a href="form.html" class="btn btn-primary">
+            + Add Property
+        </a>
+    </section>
+
+    <section class="summary-grid">
+        <div class="summary-card">
+            <span class="summary-label">Total Properties</span>
+            <h2>5</h2>
+            <span class="summary-note">All registered listings</span>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Approved</span>
+            <h2>4</h2>
+            <span class="summary-note">Visible listings</span>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-label">Pending</span>
+            <h2>1</h2>
+            <span class="summary-note">Waiting for verification</span>
+        </div>
+    </section>
+
+    <section class="content-card">
+
+        <div class="section-heading">
+            <div>
+                <h2>Property Listings</h2>
+                <p>View and manage your registered properties.</p>
+            </div>
+            <span class="record-count">5 Properties</span>
+        </div>
+
+        <div class="filter-area">
+            <div class="search-field">
+                <label for="search">Search Property</label>
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Search by name or address..."
+                >
+            </div>
+
+            <div class="filter-field">
+                <label for="status-filter">Status</label>
+                <select id="status-filter">
+                    <option value="">All Status</option>
+                    <option>Approved</option>
+                    <option>Pending</option>
+                    <option>Rejected</option>
+                </select>
+            </div>
+
+            <div class="filter-field">
+                <label for="gender-filter">Gender Policy</label>
+                <select id="gender-filter">
+                    <option value="">All Policies</option>
+                    <option>Male Only</option>
+                    <option>Female Only</option>
+                    <option>Mixed</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-secondary">
+                Reset
+            </button>
+        </div>
+
+        <div class="table-info">
+            Showing 5 of 5 properties
+        </div>
+
+        <div class="table-wrap">
+            <table class="property-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Property Name</th>
+                        <th>Address</th>
+                        <th>Gender Policy</th>
+                        <th>Curfew</th>
+                        <th>Rooms</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <strong>Sunrise Boarding House</strong>
+                            <span class="table-subtitle">Boarding House</span>
+                        </td>
+                        <td>Sample Street 1, Goa</td>
+                        <td>Mixed</td>
+                        <td>10:00 PM</td>
+                        <td>3</td>
+                        <td><span class="status approved">Approved</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="form.html" class="btn-edit">Edit</a>
+                                <button type="button" class="btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <strong>Ligaya Dormitory</strong>
+                            <span class="table-subtitle">Dormitory</span>
+                        </td>
+                        <td>Sample Street 2, Goa</td>
+                        <td>Female Only</td>
+                        <td>9:00 PM</td>
+                        <td>2</td>
+                        <td><span class="status approved">Approved</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="form.html" class="btn-edit">Edit</a>
+                                <button type="button" class="btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <strong>Mercado Apartments</strong>
+                            <span class="table-subtitle">Apartment</span>
+                        </td>
+                        <td>Sample Street 3, Goa</td>
+                        <td>Mixed</td>
+                        <td>None</td>
+                        <td>2</td>
+                        <td><span class="status approved">Approved</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="form.html" class="btn-edit">Edit</a>
+                                <button type="button" class="btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <strong>Eduardo Bedspace Rooms</strong>
+                            <span class="table-subtitle">Bedspace</span>
+                        </td>
+                        <td>Sample Street 4, Goa</td>
+                        <td>Male Only</td>
+                        <td>9:30 PM</td>
+                        <td>2</td>
+                        <td><span class="status approved">Approved</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="form.html" class="btn-edit">Edit</a>
+                                <button type="button" class="btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <strong>New Haven Rooms</strong>
+                            <span class="table-subtitle">Boarding House</span>
+                        </td>
+                        <td>Sample Street 5, Goa</td>
+                        <td>Mixed</td>
+                        <td>None</td>
+                        <td>1</td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="form.html" class="btn-edit">Edit</a>
+                                <button type="button" class="btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-footer">
+            <span>Showing 1–5 of 5 entries</span>
+            <div class="pagination">
+                <button type="button" disabled>Previous</button>
+                <button type="button" class="current-page">1</button>
+                <button type="button" disabled>Next</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 ParSUan NestFinder</p>
+        <p>Partido State University – Goa Campus</p>
+    </footer>
+
+</main>
+
+</body>
+</html>
